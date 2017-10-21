@@ -19,6 +19,11 @@ router.get('/', (req, res) => {
   });
 });
 
+//get new photo submission form page
+router.get('/new', (req, res) => {
+  res.render('./new');
+});
+
 //create new gallery photo and post to gallery
 router.post('/', (req, res) => {
   console.log('req.user', req.user);
@@ -40,11 +45,6 @@ router.post('/', (req, res) => {
     let message = { message: 'Please submit a valid url'};
     res.render('./error', message);
   }
-});
-
-//get new photo
-router.get('/new', (req, res) => {
-  res.render('./new');
 });
 
 //get photo by id in gallery
@@ -94,7 +94,8 @@ router.delete('/:id', (req, res) => {
   });
 });
 
-//render edit page for photos
+
+//render edit page for photos(can only edit author??? and description)
 router.get('/:id/edit', (req, res) => {
   const photoId = req.params.id;
   console.log(req.params.id);

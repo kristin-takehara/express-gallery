@@ -17,6 +17,18 @@ body{
   background-repeat: no-repeat;
 }
 
+a{
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: #FFC0D5;
+  padding: 1px;
+  font-size: 90%;
+}
+
+form{
+  margin: 1vw;
+}
+
 #regText{
   text-align: center;
 }
@@ -46,6 +58,7 @@ body{
   border-top: #8E8E8E dotted 1px;
   padding-bottom: 10px;
 }
+
 #title{
   font-family: 'Karla', sans-serif;
   color: #8E8E8E;
@@ -65,14 +78,6 @@ body{
   height: 85px;
   width: 200px;
   overflow: hidden;
-}
-
-a{
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  color: #FFC0D5;
-  padding: 1px;
-  font-size: 90%;
 }
 
 #banner{

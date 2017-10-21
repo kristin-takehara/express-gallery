@@ -15,6 +15,16 @@ body {
   background-image: url("../asset/cloudy-day.png");
   background-repeat: no-repeat; }
 
+a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: #FFC0D5;
+  padding: 1px;
+  font-size: 90%; }
+
+form {
+  margin: 1vw; }
+
 #regText {
   text-align: center; }
 
@@ -57,13 +67,6 @@ body {
   height: 85px;
   width: 200px;
   overflow: hidden; }
-
-a {
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  color: #FFC0D5;
-  padding: 1px;
-  font-size: 90%; }
 
 #banner {
   background-repeat: no-repeat;
