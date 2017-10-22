@@ -31,7 +31,7 @@ router.post('/', (req, res) => {
   const link = req.body.link;
   const description = req.body.description;
 //link must be an http url
-  if(link.includes('http')) {
+  if(link.includes('http') || (link.includes('JPG'))) {
     return Photo.create({ author: author, link: link, description: description, userId: req.user.id})
     .then(newPhoto => {
       // //res.render()
@@ -42,7 +42,7 @@ router.post('/', (req, res) => {
       res.render('./error', message);
     });
   }else{
-    let message = { message: 'Please submit a valid url'};
+    let message = { message: 'Please submit a valid url OR .jpg file'};
     res.render('./error', message);
   }
 });

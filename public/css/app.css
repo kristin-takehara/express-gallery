@@ -1,18 +1,16 @@
 html {
   width: 100%;
   height: 100%;
-  background-image: url("/assets/cloudy-day.png");
+  background-image: url("/assets/elastoplast.png");
   background-repeat: repeat;
   background-position: center;
-  background-attachment: center fixed;
-  background-size: cover; }
+  background-attachment: center fixed; }
 
 body {
   margin: 50px;
   font-family: 'Roboto', sans-serif;
   color: #8E8E8E;
   font-size: 16px;
-  background-image: url("../asset/cloudy-day.png");
   background-repeat: no-repeat; }
 
 a {
@@ -39,14 +37,15 @@ form {
   margin-right: auto; }
 
 #nav {
-  display: flex;
-  justify-content: space-between; }
+  text-align: right;
+  padding: 1vw; }
 
 #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-top: #8E8E8E dotted 1px;
+  padding-top: 10px;
   padding-bottom: 10px; }
 
 #title {
@@ -54,19 +53,21 @@ form {
   color: #8E8E8E;
   font-size: 300%;
   font-weight: 800;
-  padding-right: 100px;
-  padding-top: 5px; }
+  padding-right: 20px; }
 
 #intro {
   display: none;
   font-size: 75%;
   border-left: dotted 1px #8E8E8E;
-  padding-left: 10px;
-  padding-top: 5px;
+  padding-left: 20px;
   font-family: 'Roboto', sans-serif;
   height: 85px;
   width: 200px;
   overflow: hidden; }
+
+#upload {
+  font-size: 100%;
+  text-align: right; }
 
 #banner {
   background-repeat: no-repeat;
@@ -75,7 +76,9 @@ form {
   margin-bottom: 20px;
   margin-right: 50px;
   height: 35vw;
-  width: 80vw; }
+  width: 80vw;
+  filter: grayscale(50%);
+  box-shadow: 30px 30px 55px 0 beige inset, -30px -30px 55px 0 beige inset; }
 
 #content {
   font-family: 'Roboto', sans-serif;
@@ -104,7 +107,11 @@ form {
     #detailContent #details .previewImg {
       background-size: contain;
       background-position: center;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+  #detailContent #preview {
+    display: none; }
   #detailContent .thumbnail {
     line-height: 10px;
     padding-left: 200px; }
@@ -115,9 +122,6 @@ form {
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat; }
-
-#preview {
-  display: none; }
 
 #footer {
   padding-top: 10px;
@@ -131,8 +135,9 @@ form {
   #title {
     font-size: 450%; }
   #header {
-    padding-bottom: 80px; }
+    padding-bottom: 50px; }
   #banner {
     width: 87vw; }
   #preview {
-    display: flex; } }
+    display: flex;
+    flex-direction: column; } }
