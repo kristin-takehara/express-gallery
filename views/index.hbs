@@ -8,10 +8,12 @@
 {{> header}}
 <div id="banner" style="background-image: url(/assets/IMG_2302.JPG);">
 </div>
+<h1>Each baby has a story, show yours!</h1>
+<br>
 <div id="content">
   {{#each photos}}
   <div class="image">
-    <a href ="/gallery/{{id}}"><div class="img" style="background-image: url({{link}}); height: 300px; width: 300px;"></div></a>
+    <a href ="/gallery/{{id}}"><div class="img" style="background-image: url({{link}});"></div></a>
     <br>
     <div class="author">{{author}}</div>
   </div>

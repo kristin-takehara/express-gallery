@@ -4,18 +4,24 @@
   <div id="details">
     <div class="author">{{mainPhoto.author}}</div>
    {{!--  {{mainPhoto.link}} --}}
-    <div class="previewImg" style="background-image: url({{mainPhoto.link}}); height: 450px; width: 700px;">
+    <div class="previewImg" style="background-image: url({{mainPhoto.link}});">
     </div>
+
+    <br>
+    <br>
+
     {{mainPhoto.description}}
+
     <br>
     <br>
+
     <a href="/gallery/{{mainPhoto.id}}/edit">EDIT photo</a>
   </div>
 
   <div id="preview">
     {{#each photos}}
       <div class="thumbnail">
-        <a href ="/gallery/{{id}}"><div class="thumbnail_img" style="background-image: url({{link}}); height: 250px; width: 350px;"></div></a>
+        <a href ="/gallery/{{id}}"><div class="thumbnail_img" style="background-image: url({{link}});"></div></a>
         <br>
         <div class="author">{{author}}</div>
         <br>

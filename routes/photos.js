@@ -53,7 +53,7 @@ router.get('/:id', (req, res) => {
 
   return Photo.findAll({
     where: {
-      id: [(photoId), (parseInt(photoId)+1), (parseInt(photoId)+2), (parseInt(photoId+3))]
+      id: [(photoId), (parseInt(photoId)+1), (parseInt(photoId)+2), (parseInt(photoId)+3)]
     },
   })
   .then(photo => {

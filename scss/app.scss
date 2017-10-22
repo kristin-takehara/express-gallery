@@ -97,22 +97,28 @@ form{
   filter: grayscale(50%);
   box-shadow: 30px 30px 55px 0 beige inset, -30px -30px 55px 0 beige inset;
 }
-
+h1{
+    display: center;
+    text-align: center;
+  }
 #content{
   font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   border-top: #8E8E8E solid 1px;
-  border-bottom: #8E8E8E 1px solid;
+  border-bottom: #8E8E8E solid 1px ;
   .image{
     padding-top: 10px;
     padding-bottom: 10px;
   }
   .img{
-    background-size: contain;
-    background-position: center;
+    position: relative;
+    height: 300px;
+    width: 200px;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -120,41 +126,47 @@ form{
   display: flex;
   width: 600px;
   justify-content: space-between;
-
   #details{
     line-height: 20px;
-    width: 600px;
+    width: 700px;
     .author{
       font-size: 120%;
     }
-    .previewImg{
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    }
   }
 
-#preview{
-  display:none;
-}
+  .previewImg{
+    position: relative;
+    width:600px;
+    height: 450px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    filter: grayscale(50%);
+    box-shadow: 30px 30px 55px 0 beige inset, -30px -30px 55px 0 beige inset;
+    }
+
     .thumbnail{
       line-height: 10px;
       padding-left: 200px;
       .author{
         font-size: 120%;
-        padding-left: 100px;
       }
       .thumbnail_img{
-        background-size: contain;
-        background-position: center;
+        position: relative;
+        height: 250px;
+        width: 300px;
+        background-position: 50% 50%;
         background-repeat: no-repeat;
+        background-size: cover;
       }
     }
 }
 
-
+#preview{
+  display:none;
+}
 
 #footer{
   padding-top: 10px;
@@ -176,12 +188,13 @@ form{
   }
 
   #banner {
-    width: 87vw;
+    width: 92vw;
   }
 
   #preview{
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 }
 
