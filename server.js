@@ -76,7 +76,8 @@ passport.use(new LocalStrategy(function(username, password, done){
       });
     }
   })
-  .catch(err => { console.log('error: ', err);});
+  .catch(err => { console.log('error: ', err);
+  });
 }));
 
 
@@ -144,5 +145,5 @@ app.use('/gallery', photosRoutes);
 
 app.listen(port, () => {
   db.sequelize.sync({ force: false });
-  console.log(`Server listening on port: '${port}`);
+  console.log(`Server listening on port: ${port}`);
 });
